@@ -1705,6 +1705,10 @@ body {
     animation: none; /* Disable floating animation on mobile */
     transform: translateX(-50%); /* Simplify transform */
   }
+  .logo-3d h1 {
+    text-shadow: none !important;
+  }
+  
   
   /* THIS IS THE NEW FIX */
   .logo-3d h1 {
@@ -1754,7 +1758,8 @@ body {
   .mission-3d,
   .hero-stats-3d,
   .stat-card-3d,
-  .hero-credits-3d {
+  .hero-credits-3d,
+  .nav-link-3d { /* ADD THIS LINE to fix the menu blur */
       transform: none;
       animation: none;
   }
