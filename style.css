@@ -1694,14 +1694,21 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-   body {
+  
+  body {
     perspective: none; /* Disables 3D to prevent header rendering glitch on mobile */
   }
+
   .header-3d {
     width: 95%;
     top: 10px;
     animation: none; /* Disable floating animation on mobile */
     transform: translateX(-50%); /* Simplify transform */
+  }
+  
+  /* THIS IS THE NEW FIX */
+  .logo-3d h1 {
+    transform: none; /* Removes the 3D tilt from logo text on mobile */
   }
 
   .nav-toggle {
