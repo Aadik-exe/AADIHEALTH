@@ -1748,3 +1748,24 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-teal-400);
 }
+<header class="header-3d">
+    <nav class="nav-3d">
+        <div class="logo-3d">
+            <h1>Healthcare India</h1>
+            <span class="logo-subtitle">Traditional vs Modern</span>
+        </div>
+        
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-list-3d">
+            <li><a href="#introduction" class="nav-link-3d">Introduction</a></li>
+            <li><a href="#problems" class="nav-link-3d">Problems</a></li>
+            <li><a href="#survey" class="nav-link-3d">Survey</a></li>
+            <li><a href="#comparison" class="nav-link-3d">Comparison</a></li>
+            <li><a href="#guidance" class="nav-link-3d">Guidance</a></li>
+            <li><a href="#team" class="nav-link-3d">Team</a></li>
+        </ul>
+    </nav>
+</header>
