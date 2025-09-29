@@ -1774,17 +1774,16 @@ body {
 @media (max-width: 768px) {
     /* ... your other mobile styles ... */
 
-    .nav-link-3d {
-        font-size: var(--font-size-2xl);
-        padding: var(--space-20);
-        color: var(--color-white);
-    }
+   /* style.css */
 
-    /* ADD THESE NEW STYLES BELOW */
+@media (max-width: 768px) {
+    /* ... other mobile styles ... */
+
+    /* REPLACE THE PREVIOUS .hero-3d FIX WITH THIS ONE */
     .hero-3d {
-        min-height: auto; /* Let the content define its own height */
-        padding: 140px 0 60px 0; /* Add top/bottom padding for spacing */
-        align-items: flex-start; /* Align content to the top */
+        display: block;         /* Switch from flex to a simple block layout */
+        min-height: 0;          /* Force the height to fit the content */
+        padding: 120px 20px 60px 20px; /* Add space around the content */
     }
 
     /* ... rest of your mobile styles ... */
