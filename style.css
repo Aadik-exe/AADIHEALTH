@@ -1740,9 +1740,13 @@ body {
   }
 
   .hero-content-3d,
-  .stat-card-3d {
-      transform: none; /* Key Change: Remove 3D transforms */
-      animation: none; /* Disable complex animations */
+  .hero-title-3d h1,
+  .mission-3d,
+  .hero-stats-3d,
+  .stat-card-3d,
+  .hero-credits-3d {
+      transform: none;
+      animation: none;
   }
 
   .stat-card-3d:hover {
