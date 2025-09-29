@@ -1694,6 +1694,9 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+   body {
+    perspective: none; /* Disables 3D to prevent header rendering glitch on mobile */
+  }
   .header-3d {
     width: 95%;
     top: 10px;
