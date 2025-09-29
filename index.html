@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional vs Modern Healthcare in India</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Animated 3D Background -->
+    <div class="background-3d">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <!-- 3D Floating Navigation -->
+    <header class="header-3d">
+        <nav class="nav-3d">
+            <div class="logo-3d">
+                <h1>Healthcare India</h1>
+                <span class="logo-subtitle">Traditional vs Modern</span>
+            </div>
+            <ul class="nav-list-3d">
+                <li><a href="#introduction" class="nav-link-3d">Introduction</a></li>
+                <li><a href="#problems" class="nav-link-3d">Problems</a></li>
+                <li><a href="#survey" class="nav-link-3d">Survey</a></li>
+                <li><a href="#comparison" class="nav-link-3d">Comparison</a></li>
+                <li><a href="#guidance" class="nav-link-3d">Guidance</a></li>
+                <li><a href="#team" class="nav-link-3d">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-3d">
+        <!-- 3D Hero Section -->
+        <section id="hero" class="hero-3d">
+            <div class="hero-content-3d">
+                <div class="hero-title-3d">
+                    <h1>Traditional vs Modern Healthcare in India</h1>
+                    <p class="mission-3d">Understanding Healthcare Choices for Better Health Decisions</p>
+                </div>
+                <div class="hero-stats-3d">
+                    <div class="stat-card-3d">
+                        <span class="stat-number">54.5%</span>
+                        <span class="stat-label">Modern Medicine</span>
+                    </div>
+                    <div class="stat-card-3d">
+                        <span class="stat-number">36.4%</span>
+                        <span class="stat-label">Traditional Methods</span>
+                    </div>
+                    <div class="stat-card-3d">
+                        <span class="stat-number">9.1%</span>
+                        <span class="stat-label">Mixed Approach</span>
+                    </div>
+                </div>
+                <div class="hero-credits-3d">
+                    <p><strong>Students:</strong> Aadi Kulkarni, Abhyudya Waghmare, Drishti Agarwal</p>
+                    <p><strong>Guide:</strong> Prof. Swati Rajput | PCCOER</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="section-3d">
+            <div class="container-3d">
+                <div class="card-3d intro-card">
+                    <h2>Introduction</h2>
+                    <p>Healthcare in India represents a fascinating intersection of ancient wisdom and modern science. With a rich tradition of Ayurveda, Unani, and other indigenous healing systems, India has maintained its traditional healthcare practices while embracing modern medicine.</p>
+                    <p>This research explores the preferences, effectiveness, and integration possibilities between traditional and modern healthcare approaches in contemporary India.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problems Section -->
+        <section id="problems" class="section-3d">
+            <div class="container-3d">
+                <div class="card-3d problems-card">
+                    <h2>Healthcare Challenges</h2>
+                    <div class="problems-grid-3d">
+                        <div class="problem-item-3d">
+                            <h3>Accessibility Issues</h3>
+                            <p>Limited access to quality healthcare in rural areas, creating reliance on traditional methods.</p>
+                        </div>
+                        <div class="problem-item-3d">
+                            <h3>Cost Barriers</h3>
+                            <p>High costs of modern treatments making traditional alternatives more appealing to many.</p>
+                        </div>
+                        <div class="problem-item-3d">
+                            <h3>Trust & Beliefs</h3>
+                            <p>Cultural preferences and generational trust in traditional healing methods.</p>
+                        </div>
+                        <div class="problem-item-3d">
+                            <h3>Integration Challenges</h3>
+                            <p>Difficulty in combining traditional and modern approaches effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Survey Section -->
+        <section id="survey" class="section-3d survey-section-3d">
+            <div class="container-3d">
+                <div class="survey-header-3d">
+                    <h2>Healthcare Preferences Survey</h2>
+                    <p>Share your healthcare preferences and see real-time results from other participants</p>
+                    <div class="response-counter-3d">
+                        <span class="status status--info">Total Responses: <span id="totalResponses">0</span></span>
+                    </div>
+                </div>
+
+                <!-- 3D Survey Form -->
+                <div class="survey-form-container-3d">
+                    <form id="healthSurveyForm" class="survey-form-3d">
+                        <div class="form-grid-3d">
+                            <div class="form-group-3d">
+                                <label for="age" class="form-label-3d">Age Group</label>
+                                <select id="age" class="form-control-3d" required>
+                                    <option value="">Select age group</option>
+                                    <option value="18-25">18-25 years</option>
+                                    <option value="26-35">26-35 years</option>
+                                    <option value="36-45">36-45 years</option>
+                                    <option value="46-55">46-55 years</option>
+                                    <option value="56+">56+ years</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group-3d">
+                                <label for="preference" class="form-label-3d">Healthcare Preference</label>
+                                <select id="preference" class="form-control-3d" required>
+                                    <option value="">Select preference</option>
+                                    <option value="Modern Medicine">Modern Medicine</option>
+                                    <option value="Traditional Methods">Traditional Methods</option>
+                                    <option value="Mixed Approach">Mixed Approach</option>
+                                    <option value="Ayurveda">Ayurveda</option>
+                                    <option value="Homeopathy">Homeopathy</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group-3d">
+                                <label for="concerns" class="form-label-3d">Primary Health Concern</label>
+                                <select id="concerns" class="form-control-3d" required>
+                                    <option value="">Select concern</option>
+                                    <option value="Chronic Diseases">Chronic Diseases</option>
+                                    <option value="Preventive Care">Preventive Care</option>
+                                    <option value="Mental Health">Mental Health</option>
+                                    <option value="Digestive Issues">Digestive Issues</option>
+                                    <option value="Lifestyle Disorders">Lifestyle Disorders</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group-3d">
+                                <label for="remedies" class="form-label-3d">Traditional Remedies Usage</label>
+                                <select id="remedies" class="form-control-3d" required>
+                                    <option value="">Select frequency</option>
+                                    <option value="Never">Never</option>
+                                    <option value="Rarely">Rarely</option>
+                                    <option value="Sometimes">Sometimes</option>
+                                    <option value="Often">Often</option>
+                                    <option value="Always">Always</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group-3d">
+                                <label for="exercise" class="form-label-3d">Exercise Frequency</label>
+                                <select id="exercise" class="form-control-3d" required>
+                                    <option value="">Select frequency</option>
+                                    <option value="Never">Never</option>
+                                    <option value="1-2 times/week">1-2 times/week</option>
+                                    <option value="3-4 times/week">3-4 times/week</option>
+                                    <option value="5-6 times/week">5-6 times/week</option>
+                                    <option value="Daily">Daily</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-3d btn-submit-3d">Submit Survey</button>
+                    </form>
+
+                    <div id="successMessage" class="success-message-3d hidden">
+                        <div class="status status--success">
+                            Thank you! Your response has been recorded and charts updated.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Charts Section -->
+                <div class="charts-container-3d">
+                    <h3>Live Survey Results</h3>
+                    <div class="charts-grid-3d">
+                        <div class="chart-card-3d">
+                            <h4>Age Distribution</h4>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="ageChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card-3d">
+                            <h4>Healthcare Preferences</h4>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="preferenceChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card-3d">
+                            <h4>Health Concerns</h4>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="concernsChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card-3d">
+                            <h4>Traditional Remedies</h4>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="remediesChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card-3d">
+                            <h4>Exercise Habits</h4>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="exerciseChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section id="comparison" class="section-3d">
+            <div class="container-3d">
+                <div class="card-3d comparison-card">
+                    <h2>Traditional vs Modern Healthcare</h2>
+                    <div class="comparison-grid-3d">
+                        <div class="comparison-column-3d traditional">
+                            <h3>Traditional Healthcare</h3>
+                            <ul class="comparison-list-3d">
+                                <li>Holistic approach to health</li>
+                                <li>Natural remedies and herbs</li>
+                                <li>Time-tested methods</li>
+                                <li>Lower cost and accessibility</li>
+                                <li>Focus on prevention</li>
+                                <li>Cultural acceptance</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-column-3d modern">
+                            <h3>Modern Healthcare</h3>
+                            <ul class="comparison-list-3d">
+                                <li>Scientific evidence-based</li>
+                                <li>Advanced diagnostic tools</li>
+                                <li>Rapid treatment options</li>
+                                <li>Surgical interventions</li>
+                                <li>Pharmaceutical solutions</li>
+                                <li>Standardized protocols</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guidance Section -->
+        <section id="guidance" class="section-3d">
+            <div class="container-3d">
+                <div class="card-3d guidance-card">
+                    <h2>Healthcare Guidance</h2>
+                    <div class="guidance-grid-3d">
+                        <div class="guidance-item-3d">
+                            <h3>When to Choose Traditional</h3>
+                            <p>For preventive care, chronic conditions, and lifestyle-related issues where holistic approaches may be beneficial.</p>
+                        </div>
+                        <div class="guidance-item-3d">
+                            <h3>When to Choose Modern</h3>
+                            <p>For emergency situations, acute conditions, surgical needs, and cases requiring immediate intervention.</p>
+                        </div>
+                        <div class="guidance-item-3d">
+                            <h3>Integrated Approach</h3>
+                            <p>Combining both systems can provide comprehensive care, using traditional methods for prevention and modern for treatment.</p>
+                        </div>
+                        <div class="guidance-item-3d">
+                            <h3>Safety First</h3>
+                            <p>Always consult qualified practitioners and inform all healthcare providers about treatments being used.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section with 3D Slideshow -->
+        <section id="team" class="section-3d">
+            <div class="container-3d">
+                <div class="card-3d team-card">
+                    <h2>Research Team</h2>
+                    <div class="team-slideshow-3d">
+                        <div class="slide-3d active">
+                            <div class="team-member-3d">
+                                <div class="member-avatar-3d">AK</div>
+                                <h3>Aadi Kulkarni</h3>
+                                <p>Research Lead & Data Analysis</p>
+                                <p>Specializing in healthcare technology and traditional medicine research.</p>
+                            </div>
+                        </div>
+                        <div class="slide-3d">
+                            <div class="team-member-3d">
+                                <div class="member-avatar-3d">AW</div>
+                                <h3>Abhyudya Waghmare</h3>
+                                <p>Survey Design & Implementation</p>
+                                <p>Expert in healthcare analytics and user experience design.</p>
+                            </div>
+                        </div>
+                        <div class="slide-3d">
+                            <div class="team-member-3d">
+                                <div class="member-avatar-3d">DA</div>
+                                <h3>Drishti Agarwal</h3>
+                                <p>Content Research & Analysis</p>
+                                <p>Focused on traditional healthcare systems and modern integration.</p>
+                            </div>
+                        </div>
+                        <div class="slideshow-dots-3d">
+                            <span class="dot-3d active" data-slide="0"></span>
+                            <span class="dot-3d" data-slide="1"></span>
+                            <span class="dot-3d" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="supervisor-info-3d">
+                        <h3>Under the Guidance of</h3>
+                        <p><strong>Prof. Swati Rajput</strong></p>
+                        <p>Pimpri Chinchwad College of Engineering and Research (PCCOER)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section id="conclusion" class="section-3d">
+            <div class="container-3d">
+                <div class="card-3d conclusion-card">
+                    <h2>Conclusion</h2>
+                    <p>The future of healthcare in India lies not in choosing between traditional and modern medicine, but in finding the optimal integration of both systems. Our research shows that people are increasingly open to combined approaches that leverage the strengths of each system.</p>
+                    <p>By understanding patient preferences and creating bridges between traditional wisdom and modern science, we can build a more comprehensive and accessible healthcare system for all Indians.</p>
+                    <div class="cta-section-3d">
+                        <a href="#survey" class="btn-3d btn-cta-3d">Participate in Our Survey</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-3d">
+        <div class="container-3d">
+            <div class="footer-content-3d">
+                <div class="footer-section-3d">
+                    <h4>Healthcare India</h4>
+                    <p>Bridging traditional wisdom with modern science</p>
+                </div>
+                <div class="footer-section-3d">
+                    <h4>Research Project</h4>
+                    <p>Traditional vs Modern Healthcare in India</p>
+                    <p>PCCOER - 2025</p>
+                </div>
+                <div class="footer-section-3d">
+                    <h4>Team</h4>
+                    <p>Aadi Kulkarni, Abhyudya Waghmare, Drishti Agarwal</p>
+                    <p>Guide: Prof. Swati Rajput</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
