@@ -707,6 +707,26 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize performance monitoring
     PerformanceMonitor.init();
+
+    // Hamburger Menu Logic
+    const navToggle = document.querySelector('.nav-toggle');
+    const header = document.querySelector('.header-3d');
+    const navLinks = document.querySelectorAll('.nav-link-3d');
+
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            header.classList.toggle('nav-open');
+        });
+    }
+
+    // Close menu when a link is clicked (for single-page apps)
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (header.classList.contains('nav-open')) {
+                header.classList.remove('nav-open');
+            }
+        });
+    });
     
     // Keyboard navigation enhancements
     document.addEventListener('keydown', (e) => {
@@ -715,6 +735,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const successMessage = document.getElementById('successMessage');
             if (successMessage && !successMessage.classList.contains('hidden')) {
                 successMessage.classList.add('hidden');
+            }
+            // Also close the nav if it's open
+            if(header.classList.contains('nav-open')) {
+                header.classList.remove('nav-open');
             }
         }
         
