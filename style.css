@@ -299,7 +299,6 @@
 
 /* Base styles */
 html {
-  /* UPDATED FOR FLUID TYPOGRAPHY */
   font-size: clamp(14px, 1.5vw + 8px, 16px);
   font-family: var(--font-family-base);
   line-height: var(--line-height-normal);
@@ -752,10 +751,6 @@ select.form-control {
 }
 
 html {
-  /* This makes the root font size smoothly scale from 14px to 16px */
-  /* All 'rem' units in your project will now be fluid */
-  font-size: clamp(14px, 1.5vw + 8px, 16px);
-  
   font-family: 'Open Sans', var(--font-family-base);
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -1644,7 +1639,6 @@ body {
   opacity: 0.8;
 }
 
-
 /* --- START NEW RESPONSIVE AND MENU STYLES --- */
 
 /* Hamburger Menu Styles */
@@ -1700,18 +1694,6 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-link-3d {
-        font-size: var(--font-size-2xl);
-        padding: var(--space-20);
-        color: var(--color-white);
-    }
-
-    /* ADD THESE NEW STYLES BELOW */
-    .hero-3d {
-        min-height: auto; /* Let the content define its own height */
-        padding: 140px 0 60px 0; /* Add top/bottom padding for spacing */
-        align-items: flex-start; /* Align content to the top */
-    }
   .header-3d {
     width: 95%;
     top: 10px;
@@ -1719,10 +1701,6 @@ body {
     transform: translateX(-50%); /* Simplify transform */
   }
 
-  .nav-3d {
-    /* Keep original styles, hamburger logic will handle list */
-  }
-  
   .nav-toggle {
     display: block; /* Show the hamburger button */
   }
@@ -1735,7 +1713,6 @@ body {
     height: 100vh;
     background: rgba(var(--color-slate-900-rgb), 0.95);
     backdrop-filter: blur(10px);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1755,11 +1732,21 @@ body {
     color: var(--color-white);
   }
 
-  /* MOBILE HERO FIX */
+  /* --- MOBILE SIMPLIFICATION & FIX --- */
   .hero-3d {
-      display: block;         /* Switch from flex to a simple block layout */
-      min-height: 0;          /* Force the height to fit the content */
-      padding: 120px 20px 60px 20px; /* Add space around the content */
+      display: block;
+      min-height: 0;
+      padding: 120px 20px 60px 20px;
+  }
+
+  .hero-content-3d,
+  .stat-card-3d {
+      transform: none; /* Key Change: Remove 3D transforms */
+      animation: none; /* Disable complex animations */
+  }
+
+  .stat-card-3d:hover {
+      transform: scale(1.05); /* Use a simpler hover effect */
   }
 
   .hero-stats-3d {
