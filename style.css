@@ -177,15 +177,14 @@
   }
 
   .logo-3d h1 {
-    transform: none;
-    text-shadow: none;
     font-size: var(--font-size-lg);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    transform: none !important; /* prevent 3D duplication */
+    text-shadow: none;
   }
 
-  .logo-subtitle { display: none; }
+  .logo-subtitle {
+    display: none; /* hides the "Traditional vs Modern" text */
+  }
 
   .nav-toggle { display: block; }
 
