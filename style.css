@@ -1700,6 +1700,18 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .nav-link-3d {
+        font-size: var(--font-size-2xl);
+        padding: var(--space-20);
+        color: var(--color-white);
+    }
+
+    /* ADD THESE NEW STYLES BELOW */
+    .hero-3d {
+        min-height: auto; /* Let the content define its own height */
+        padding: 140px 0 60px 0; /* Add top/bottom padding for spacing */
+        align-items: flex-start; /* Align content to the top */
+    }
   .header-3d {
     width: 95%;
     top: 10px;
