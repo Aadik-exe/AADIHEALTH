@@ -1858,4 +1858,26 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-teal-400);
+
+.key-points-3d {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.key-points-3d li {
+  background: rgba(31, 184, 205, 0.1);
+  border-left: 4px solid #1FB8CD;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.key-points-3d li:hover {
+  background: rgba(31, 184, 205, 0.2);
+  transform: translateX(5px);
+}
+
 }
