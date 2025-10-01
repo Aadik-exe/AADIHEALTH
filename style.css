@@ -1065,11 +1065,13 @@ body {
 }
 
 .container-3d {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;        /* only left & right padding */
-  transform-style: preserve-3d;
+    width: 100%;
+    max-width: 1200px;  /* optional, keeps content centered */
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
+
 
 
 /* 3D Cards */
@@ -1387,20 +1389,18 @@ body {
 
 /* Comparison Grid */
 .comparison-grid-3d {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-32);
-  margin-top: var(--space-24);
+    display: flex;
+    flex-wrap: wrap;       /* allows items to move to next line if needed */
+    gap: 20px;             /* spacing between columns */
+    justify-content: space-between;
 }
 
 .comparison-column-3d {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-base);
-  padding: var(--space-24);
-  transform: translateZ(20px);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    flex: 1 1 45%;         /* grow/shrink, min width 45% */
+    box-sizing: border-box;
+    min-width: 300px;      /* prevent too small columns */
 }
+
 
 .comparison-column-3d.traditional:hover {
   transform: translateZ(40px) rotateY(-3deg);
