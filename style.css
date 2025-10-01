@@ -931,9 +931,7 @@ body {
   transition: left 0.5s;
 }
 
-.nav-link-3d:hover::before {
-  left: 100%;
-}
+
 
 .nav-link-3d:hover {
   color: var(--color-primary);
