@@ -1058,6 +1058,8 @@ body {
 /* 3D Sections */
 .section-3d {
   padding: var(--space-32) 0;
+  margin: 60px 0;   /* space above & below each section */
+  padding: 40px 20px;
   transform-style: preserve-3d;
   position: relative;
 }
