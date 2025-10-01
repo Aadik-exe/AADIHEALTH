@@ -1057,7 +1057,7 @@ body {
 
 /* 3D Sections */
 .section-3d {
-  margin: 100px 0;        /* ensures big vertical gap between tiles */
+  margin: 50px 0;        /* ensures big vertical gap between tiles */
   padding: 60px 20px;     /* inner padding inside each tile */
   transform-style: preserve-3d;
   position: relative;
